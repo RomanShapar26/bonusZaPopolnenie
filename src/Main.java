@@ -2,6 +2,7 @@ public class Main {
 
     public static void main(String[] args) {
 
+        int balance = 100;
         int amount = 1350;
 
         int percent;
@@ -11,7 +12,7 @@ public class Main {
             percent = 0;
         }
         int bonus = amount / 100 * percent;
-        int generalBalance = 100 + amount + bonus;
+        int generalBalance = balance + amount + bonus;
         System.out.println("Бонус за пополнение:" + bonus);
         System.out.println("Бонус за пополнение:" + generalBalance);
 
